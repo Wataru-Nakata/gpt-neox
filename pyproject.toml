@@ -1,0 +1,19 @@
+[project]
+name = "gpt-neox"
+version = "0.1.0"
+description = "Add a short description here"
+authors = [
+    { name = "Wataru Nakata", email = "wataru9871@gmail.com" }
+]
+dependencies = [ "lm_eval~=0.3.0", "mpi4py~=3.1.5", "numpy~=1.24.4", "pybind11~=2.11.1", "regex~=2023.10.3", "sentencepiece~=0.1.99", "six~=1.16.0", "tiktoken~=0.5.1", "tokenizers~=0.14.1", "transformers~=4.34.0", "lm-dataformat~=0.0.20", "ftfy~=6.1.1", "deepspeed~=0.11.1"]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+[tool.hatch.metadata]
+allow-direct-references = true
